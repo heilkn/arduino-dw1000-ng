@@ -1639,7 +1639,7 @@ namespace DW1000Ng {
 		address[1] = _networkAndAddress[1];
 	}
 
-	void setEUI(char eui[]) {
+	void setEUI(char const eui[]) {
 		byte eui_byte[LEN_EUI];
 		DW1000NgUtils::convertToByte(eui, eui_byte);
 		setEUI(eui_byte);
